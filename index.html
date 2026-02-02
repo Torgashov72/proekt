@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCrafters - Веб-разработка и программирование</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="header-video">
+            <video autoplay muted loop playsinline>
+                <source src="video.mp4" type="video/mp4">
+                <source src="video.webm" type="video/webm">
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        
+        <nav class="navbar">
+            <div class="container nav-container">
+                <a href="#" class="logo">CodeCrafters</a>
+                
+                <!-- Мобильное меню -->
+                <button class="mobile-menu-btn" aria-label="Открыть меню">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <!-- Основное меню -->
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Главная</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Услуги <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Веб-разработка</a></li>
+                            <li><a href="#">Frontend</a></li>
+                            <li><a href="#">Backend</a></li>
+                            <li><a href="#">Мобильные приложения</a></li>
+                            <li><a href="#">DevOps</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Технологии <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">JavaScript</a></li>
+                            <li><a href="#">React/Vue</a></li>
+                            <li><a href="#">Node.js</a></li>
+                            <li><a href="#">Python/Django</a></li>
+                            <li><a href="#">Базы данных</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Портфолио</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Блог</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- Герой-секция -->
+        <div class="hero">
+            <div class="container">
+                <h1 class="hero-title">Профессиональная веб-разработка</h1>
+                <p class="hero-subtitle">Создаем современные, быстрые и удобные веб-приложения с использованием передовых технологий</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">Наши услуги</a>
+                    <a href="#contact" class="btn btn-secondary">Связаться с нами</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Мобильное меню (отдельный блок для лучшей адаптивности) -->
+    <div class="mobile-menu-overlay"></div>
+    <div class="mobile-menu">
+        <button class="mobile-menu-close" aria-label="Закрыть меню">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-nav">
+            <li><a href="#">Главная</a></li>
+            <li class="mobile-dropdown">
+                <a href="#">Услуги <i class="fas fa-chevron-down"></i></a>
+                <ul class="mobile-submenu">
+                    <li><a href="#">Веб-разработка</a></li>
+                    <li><a href="#">Frontend</a></li>
+                    <li><a href="#">Backend</a></li>
+                    <li><a href="#">Мобильные приложения</a></li>
+                    <li><a href="#">DevOps</a></li>
+                </ul>
+            </li>
+            <li class="mobile-dropdown">
+                <a href="#">Технологии <i class="fas fa-chevron-down"></i></a>
+                <ul class="mobile-submenu">
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">React/Vue</a></li>
+                    <li><a href="#">Node.js</a></li>
+                    <li><a href="#">Python/Django</a></li>
+                    <li><a href="#">Базы данных</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Портфолио</a></li>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Секция услуг -->
+        <section id="services" class="section services">
+            <div class="container">
+                <h2 class="section-title">Наши услуги</h2>
+                <p class="section-subtitle">Полный цикл разработки веб-приложений</p>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="service-title">Frontend разработка</h3>
+                        <p class="service-description">Создание адаптивных и интерактивных пользовательских интерфейсов с использованием React, Vue.js и современных CSS-фреймворков.</p>
+                        <a href="#" class="service-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3 class="service-title">Backend разработка</h3>
+                        <p class="service-description">Разработка серверной логики, API и систем управления данными с использованием Node.js, Python, PHP и других технологий.</p>
+                        <a href="#" class="service-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="service-title">Мобильные приложения</h3>
+                        <p class="service-description">Создание кроссплатформенных мобильных приложений с использованием React Native, Flutter и нативных технологий.</p>
+                        <a href="#" class="service-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3 class="service-title">DevOps и облака</h3>
+                        <p class="service-description">Настройка CI/CD, контейнеризация, развертывание в облаках AWS, Google Cloud, Azure и мониторинг приложений.</p>
+                        <a href="#" class="service-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция технологий -->
+        <section class="section technologies">
+            <div class="container">
+                <h2 class="section-title">Технологии которые мы используем</h2>
+                
+                <div class="tech-slider">
+                    <div class="slider-container">
+                        <div class="slider-track">
+                            <!-- Слайды будут добавлены через JavaScript -->
+                        </div>
+                    </div>
+                    <div class="slider-controls">
+                        <button class="slider-prev" aria-label="Предыдущий слайд">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="slider-dots">
+                            <!-- Точки будут добавлены через JavaScript -->
+                        </div>
+                        <button class="slider-next" aria-label="Следующий слайд">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция тарифов -->
+        <section class="section pricing">
+            <div class="container">
+                <h2 class="section-title">Наши тарифы</h2>
+                <p class="section-subtitle">Выберите оптимальный план для вашего проекта</p>
+                
+                <div class="pricing-cards">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Стартовый</h3>
+                            <div class="pricing-price">
+                                <span class="price">от 50 000 ₽</span>
+                                <span class="period">/ проект</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Адаптивный сайт</li>
+                            <li><i class="fas fa-check"></i> До 5 страниц</li>
+                            <li><i class="fas fa-check"></i> Базовый дизайн</li>
+                            <li><i class="fas fa-check"></i> Контактная форма</li>
+                            <li><i class="fas fa-times"></i> Админ-панель</li>
+                            <li><i class="fas fa-times"></i> Техподдержка</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline">Выбрать тариф</a>
+                    </div>
+                    
+                    <div class="pricing-card featured">
+                        <div class="pricing-badge">Популярный</div>
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Бизнес</h3>
+                            <div class="pricing-price">
+                                <span class="price">от 150 000 ₽</span>
+                                <span class="period">/ проект</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Веб-приложение</li>
+                            <li><i class="fas fa-check"></i> Индивидуальный дизайн</li>
+                            <li><i class="fas fa-check"></i> Админ-панель</li>
+                            <li><i class="fas fa-check"></i> База данных</li>
+                            <li><i class="fas fa-check"></i> API интеграции</li>
+                            <li><i class="fas fa-times"></i> Техподдержка 24/7</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary">Выбрать тариф</a>
+                    </div>
+                    
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Enterprise</h3>
+                            <div class="pricing-price">
+                                <span class="price">от 500 000 ₽</span>
+                                <span class="period">/ проект</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Комплексное решение</li>
+                            <li><i class="fas fa-check"></i> Масштабируемая архитектура</li>
+                            <li><i class="fas fa-check"></i> DevOps настройка</li>
+                            <li><i class="fas fa-check"></i> Интеграция с 1С/CRM</li>
+                            <li><i class="fas fa-check"></i> Мобильное приложение</li>
+                            <li><i class="fas fa-check"></i> Техподдержка 24/7</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline">Выбрать тариф</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция контактов -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h2 class="section-title">Свяжитесь с нами</h2>
+                        <p class="contact-description">Готовы обсудить ваш проект? Оставьте заявку и мы свяжемся с вами в ближайшее время.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Телефон</h4>
+                                    <a href="tel:+78002222673">8 800 222-26-73</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Email</h4>
+                                    <a href="mailto:info@codecrafters.ru">info@codecrafters.ru</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Адрес</h4>
+                                    <p>Коробка кота</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                            <a href="#" aria-label="VKontakte"><i class="fab fa-vk"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Имя</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service">Услуга</label>
+                                <select id="service" name="service">
+                                    <option value="">Выберите услугу</option>
+                                    <option value="frontend">Frontend разработка</option>
+                                    <option value="backend">Backend разработка</option>
+                                    <option value="mobile">Мобильные приложения</option>
+                                    <option value="devops">DevOps</option>
+                                    <option value="consulting">Консультация</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Сообщение</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block">Отправить заявку</button>
+                            
+                            <div id="formMessage" class="form-message"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo">CodeCrafters</a>
+                    <p>Профессиональная веб-разработка и программирование с 2010 года.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Услуги</h4>
+                        <ul>
+                            <li><a href="#">Веб-разработка</a></li>
+                            <li><a href="#">Мобильные приложения</a></li>
+                            <li><a href="#">Дизайн интерфейсов</a></li>
+                            <li><a href="#">DevOps услуги</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Компания</h4>
+                        <ul>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Команда</a></li>
+                            <li><a href="#">Портфолио</a></li>
+                            <li><a href="#">Блог</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Контакты</h4>
+                        <ul>
+                            <li><a href="tel:+78002222673">8 800 222-26-73</a></li>
+                            <li><a href="mailto:info@codecrafters.ru">info@codecrafters.ru</a></li>
+                            <li>ул. Пушкина, дом Колотушкина</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 CodeCrafters. Все права защищены.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
